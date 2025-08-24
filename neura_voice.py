@@ -1,9 +1,9 @@
 import speech_recognition as sr
 import pyttsx3
 
-class Nova:
+class Neura:
     def __init__(self):
-        self.name = "Nova"
+        self.name = "Neura"
         self.engine = pyttsx3.init()
     def listen(self):
         recognizer = sr.Recognizer()
@@ -34,7 +34,7 @@ class Nova:
             reply = "I'm not sure how to respond to that. Can you ask something else?"
         self.speak(reply)
         return reply
-nove = Nova()
+nove = Neura()
 print(nove.response())
 
           

@@ -1,8 +1,8 @@
 import speech_recognition as sr
 
-class Nova:
+class Neura:
     def __init__(self):
-        self.name = "Nova"
+        self.name = "Neura"
     def listen(self):
         recognizer = sr.Recognizer()
         with sr.Microphone() as source:
@@ -17,6 +17,5 @@ class Nova:
             return "I'm great, thanks! How about you?"
         else:
             return "I'm not sure how to respond to that. Can you ask something else?"
-nove = Nova()
+nove = Neura()
 print(nove.response())
-          
